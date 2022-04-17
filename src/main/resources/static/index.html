@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	crossorigin="anonymous">
+
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div class="container">
+	  <div class="row">
+	  <div class="col-md-12">
+	  	<img src="data:image/png;base64,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" class="img-thumbnail" alt="...">
+	  	<span style="font-size: 50px">Spring Boot Rest Api</span>
+	  
+	  </div>
+	 
+	  
+	  </div>
+	 
+
+		<form action="" id="formcadastro">
+			<div class="mb-3">
+				<label for="id" class="form-label">ID</label> <input type="text"
+					class="form-control" id="id" readonly="readonly">
+			</div>
+
+			<div class="mb-3">
+				<label for="nome" class="form-label">NOME</label> <input type="text"
+					class="form-control" id="nome" placeholder="Informe um nome"
+					required="required">
+			</div>
+
+			<div class="mb-3">
+				<label for="idade" class="form-label">IDADE</label> <input
+					type="number" class="form-control" id="idade"
+					placeholder="Informe sua idade">
+			</div>
+		</form>
+
+		<button type="button" class="btn btn-primary"
+			onclick="salvarUsuario()">Salvar</button>
+
+		<button type="button" class="btn btn-secondary"
+			onclick="document.getElementById('formcadastro').reset()">Novo</button>
+
+		<button type="button" class="btn btn-success" data-bs-toggle="modal"
+			data-bs-target="#modalPesquisar">Pesquisar</button>
+			
+		<button type="button" class="btn btn-danger"
+			onclick="botaoDeletar()">Deletar</button>	
+
+
+		<div class="modal fade" id="modalPesquisar" tabindex="-1"
+			aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Pesquisar
+							Usuário</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"
+							aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="mb-3">
+								<label for="nomeBusca" class="col-form-label">Informe o
+									nome:</label> <input type="text" class="form-control" id="nomeBusca">
+							</div>
+							<button type="button" onclick="pesquisarUsuario()"
+								class="btn btn-warning">Buscar</button>
+						</form>
+						
+						<div style="overflow:scroll;">
+						
+						
+						<table class="table" id="tabelaResultados">
+							<thead>
+								<tr>
+									<th scope="col">ID</th>
+									<th scope="col">Nome</th>
+									<th scope="col">Editar</th>
+									<th scope="col">Delete</th>
+								</tr>
+							</thead>
+							<tbody>
+
+							</tbody>
+						</table>
+						</div>	
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary"
+							data-bs-dismiss="modal">Fechar</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+
+	<script>
+	
+		function botaoDeletar(){
+			var id = $('#id').val();
+			
+			if(id != null && id.trim() != ''){
+			
+			deletarUser(id);
+			
+			document.getElementById('formcadastro').reset()
+			}
+		}
+	
+		function deletarUser(id){
+		
+			if(confirm('Deseja realmente deletar esse usuário?')){
+			
+			$.ajax({
+				method: "DELETE",
+				url: "delete",
+				data: "id_delete=" + id,
+				success: function(response){
+					alert(response)
+					$('#' + id).remove();
+				}
+			}).fail(function(xhr, status, errorThrown){
+				alert("erro ao deletar usuario " + xhr.responseText);
+			});
+			
+			}
+		}
+	
+		function pesquisarUsuario(){
+			var nome = $('#nomeBusca').val();
+			
+			if(nome != null && nome.trim() != ''){
+			
+				$.ajax({
+				method: "GET",
+				url: "buscar-nome",
+				data: "nome=" + nome,
+				success: function(response){
+					$('#tabelaResultados > tbody > tr').remove();
+					
+					for(var i = 0; i < response.length; i++){
+						$('#tabelaResultados > tbody').append
+						('<tr id="'+response[i].id+'"><td>'+response[i].id+'</td><td>'+response[i].nome+'</td> <td><button type="button" class="btn btn-primary" onclick="colocarEdicao('+response[i].id+')" >Ver</button></td><td><button type="button" class="btn btn-danger" onclick="deletarUser('+response[i].id+')">Deletar</button></td></tr>');
+					}
+				}
+			}).fail(function(xhr, status, errorThrown){
+				alert("erro ao buscar usuario " + xhr.responseText);
+			});
+			}
+		}
+		
+		function colocarEdicao(id){
+			
+			$.ajax({
+				method: "GET",
+				url: "buscar",
+				data: "id_user=" + id,
+				success: function(response){
+					$("#id").val(response.id);
+					$("#nome").val(response.nome);
+					$("#idade").val(response.idade);	
+					
+					$('#modalPesquisar').modal('hide');
+				}
+			}).fail(function(xhr, status, errorThrown){
+				alert("erro ao buscar usuario " + xhr.responseText);
+			});
+			
+		}
+		
+		function salvarUsuario(){
+			var id = $("#id").val();
+			var nome = $("#nome").val();
+			var idade = $("#idade").val();
+			
+			if(nome == null || nome != null && nome.trim() == ''){
+				$('#nome').focus();
+				alert('Informe o nome');
+				return;
+			}
+			
+			if(idade == null || idade != null && idade.trim() == ''){
+				$('#idade').focus();
+				alert('Informe o idade');
+				return;
+			}
+			
+			$.ajax({
+				method: "POST",
+				url: "salvar",
+				data: JSON.stringify({id:id, nome:nome, idade:idade}),
+				contentType:"application/json; charset=UTF-8",
+				success: function(response){
+				
+					$("#id").val(response.id);
+					alert("gravou com sucesso ")
+				}
+			}).fail(function(xhr, status, errorThrown){
+				alert("erro ao salvar usuario " + xhr.responseText);
+			});
+		}
+		
+	</script>
+</body>
+</html>
